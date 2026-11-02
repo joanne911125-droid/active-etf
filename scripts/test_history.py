@@ -30,7 +30,7 @@ ETF_CODE = "00981A"
 FUND_CODE = "49YTW"
 
 START = dt.date(2025, 7, 1)
-END = dt.date(2025, 7, 10)
+END = dt.date(2026, 10, 1)
 
 TAIWAN_TZ = dt.timezone(dt.timedelta(hours=8))
 
