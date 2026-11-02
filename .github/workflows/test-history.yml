@@ -26,3 +26,11 @@ jobs:
 
       - name: Test historical holdings
         run: python scripts/test_history.py
+
+      - name: Upload CSV files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: etf-history-test
+          path: output/*.csv
+          if-no-files-found: warn
